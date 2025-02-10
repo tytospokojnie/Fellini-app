@@ -7,10 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "throat", x: 477 - offsetX, y: 370 - offsetY, radius: 45 },
         { id: "g_center", x: 478 - offsetX, y: 490 - offsetY, radius: 45 },
         { id: "sacral", x: 478 - offsetX, y: 632 - offsetY, radius: 45 },
-        { id: "ego", x: 556 - offsetX, y: 563 - offsetY, radius: 30 }
-    ];
+        { id: "ego", x: 556 - offsetX, y: 563 - offsetY, radius: 30 },
 
-    const planetaryThemes = [
         { id: "design_50_6", gate: "gate_50_6", x: 150 - offsetX, y: 197 - offsetY, radius: 20 },
         { id: "design_3_6", gate: "gate_3_6", x: 150 - offsetX, y: 245 - offsetY, radius: 20 },
         { id: "design_43_6", gate: "gate_43_6", x: 150 - offsetX, y: 341 - offsetY, radius: 20 },
@@ -24,7 +22,32 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "personality_7_2", gate: "gate_7_2", x: 807 - offsetX, y: 581 - offsetY, radius: 20 }
     ];
 
-    const contentMap = {
+    const imageContainer = document.getElementById("chart-container");
+    const popup = document.getElementById("popup");
+    const popupContent = document.getElementById("popup-content");
+    const closeBtn = document.getElementById("close-popup");
+
+    closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+
+    clickableAreas.forEach(area => {
+        const hotspot = document.createElement("div");
+        hotspot.classList.add("hotspot");
+        hotspot.style.left = `${area.x - area.radius}px`;
+        hotspot.style.top = `${area.y - area.radius}px`;
+        hotspot.style.width = `${area.radius * 2}px`;
+        hotspot.style.height = `${area.radius * 2}px`;
+        hotspot.dataset.id = area.id;
+
+        hotspot.addEventListener("click", () => openPopup(area.id));
+        hotspot.addEventListener("mouseenter", () => hotspot.style.backgroundColor = "rgba(255, 255, 0, 0.5)");
+        hotspot.addEventListener("mouseleave", () => hotspot.style.backgroundColor = "transparent");
+        
+        imageContainer.appendChild(hotspot);
+    });
+
+    function openPopup(id) {
         const contentMap = {
             "head": "<strong>Head Centre - Undefined:</strong> Pressure to think and generate ideas. You draw inspiration for your thoughts from the outside world and from the people around you. You love the creative atmosphere and enjoy immersing yourself in it by attending various cultural events. But do not forget that excessive conditioning can confuse your consciousness and give you a headache at the body level. ",
                         "throat": "<strong>Throat Centre - Defined:</strong> Manifestation in words or actions. You know when to speak and when to be silent, and you are equally comfortable with both. You have your own, constant and unique way of expressing yourself. If it is for you to speak, you are able to express your position or attitude to an issue in a clear and convincing way. However, be careful not to turn your oratory into a tool for psychological pressure. ",
@@ -86,47 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                            “Fellini has frequently compared his set to an ocean voyage like that of Columbus toward the New World: The crew constantly attempts to turn back, but the director-captain must somehow lead them all to a successful landing.“ (p. 3)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 7 in Line 2 represents unseen leadership—guiding others without always being the visible authority figure. Fellini's metaphor of the film set as a voyage, with himself as the captain who must lead a hesitant crew, illustrates this perfectly. He was not a dictator, but his leadership ensured that his artistic vision was realized, influencing his collaborators from behind the scenes.`,
-                    };
-    };
-
-    const chartContainer = document.getElementById("chart-container");
-    const popup = document.getElementById("popup");
-    const popupContent = document.getElementById("popup-content");
-    const closeBtn = document.getElementById("close-popup");
-
-    closeBtn.addEventListener("click", () => {
-        popup.style.display = "none";
-    });
-
-    // Create clickable areas dynamically
-    [...clickableAreas, ...planetaryThemes].forEach(area => {
-        const hotspot = document.createElement("div");
-        hotspot.classList.add("clickable");
-        hotspot.style.position = "absolute";
-        hotspot.style.left = `${area.x - area.radius}px`;
-        hotspot.style.top = `${area.y - area.radius}px`;
-        hotspot.style.width = `${area.radius * 2}px`;
-        hotspot.style.height = `${area.radius * 2}px`;
-        hotspot.style.borderRadius = "50%";
-        hotspot.style.background = "rgba(255, 0, 0, 0.3)"; // Temporary highlight
-        hotspot.dataset.action = area.id;
-
-        hotspot.addEventListener("mouseenter", () => {
-            hotspot.style.background = "rgba(255, 255, 0, 0.6)";
-        });
-
-        hotspot.addEventListener("mouseleave", () => {
-            hotspot.style.background = "rgba(255, 0, 0, 0.3)";
-        });
-
-        hotspot.addEventListener("click", function () {
-            openPopup(area.gate);
-        });
-
-        chartContainer.appendChild(hotspot);
-    });
-
-    function openPopup(id) {
+                    }
         popupContent.innerHTML = contentMap[id] || "No content available";
         popup.style.display = "block";
         popup.style.position = "absolute";

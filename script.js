@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const highlightedGates = [
-        { id: "50", x: 365 + offsetX, y: 627 + offsetY },
-        { id: "3", x: 480 + offsetX, y: 665 + offsetY },
-        { id: "60", x: 478 + offsetX, y: 711 + offsetY },
-        { id: "56", x: 496 + offsetX, y: 338 + offsetY },
-        { id: "43", x: 478 + offsetX, y: 284 + offsetY },
-        { id: "47", x: 461 + offsetX, y: 238 + offsetY },
-        { id: "40", x: 569 + offsetX, y: 581 + offsetY },
-        { id: "7", x: 461 + offsetX, y: 470 + offsetY }
+        { id: "gate_50_6", x: 365 + offsetX, y: 627 + offsetY },
+        { id: "gate_3_6", x: 480 + offsetX, y: 665 + offsetY },
+        { id: "gate_60_4", x: 478 + offsetX, y: 711 + offsetY },
+        { id: "gate_56_4", x: 496 + offsetX, y: 338 + offsetY },
+        { id: "gate_43_6", x: 478 + offsetX, y: 284 + offsetY },
+        { id: "gate_47_3", x: 461 + offsetX, y: 238 + offsetY },
+        { id: "gate_40_5", x: 569 + offsetX, y: 581 + offsetY },
+        { id: "gate_7_2", x: 461 + offsetX, y: 470 + offsetY }
     ];
 
     const imageContainer = document.getElementById("chart-container");

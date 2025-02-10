@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const offsetY = 117;
 
     const clickableAreas = [
-        { id: "head", x: 476 + offsetX, y: 173 + offsetY, radius: 30 },
+        { id: "head", x: 476 - offsetX, y: 173 - offsetY, radius: 30 },
         { id: "throat", x: 477 + offsetX, y: 370 + offsetY, radius: 45 },
         { id: "g_center", x: 478 + offsetX, y: 490 + offsetY, radius: 45 },
         { id: "sacral", x: 478 + offsetX, y: 632 + offsetY, radius: 45 },

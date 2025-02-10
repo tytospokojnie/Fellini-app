@@ -4,35 +4,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const clickableAreas = [
         { id: "head", x: 476 - offsetX, y: 173 - offsetY, radius: 30 },
-        { id: "throat", x: 477 + offsetX, y: 370 + offsetY, radius: 45 },
-        { id: "g_center", x: 478 + offsetX, y: 490 + offsetY, radius: 45 },
-        { id: "sacral", x: 478 + offsetX, y: 632 + offsetY, radius: 45 },
-        { id: "ego", x: 556 + offsetX, y: 563 + offsetY, radius: 30 }
+        { id: "throat", x: 477 - offsetX, y: 370 - offsetY, radius: 45 },
+        { id: "g_center", x: 478 - offsetX, y: 490 - offsetY, radius: 45 },
+        { id: "sacral", x: 478 - offsetX, y: 632 - offsetY, radius: 45 },
+        { id: "ego", x: 556 - offsetX, y: 563 - offsetY, radius: 30 }
     ];
 
     const planetaryThemes = [
-        { id: "design_50_6", gate: "50", x: 150 + offsetX, y: 197 + offsetY },
-        { id: "design_3_6", gate: "3", x: 150 + offsetX, y: 245 + offsetY },
-        { id: "design_43_6", gate: "43", x: 150 + offsetX, y: 341 + offsetY },
-        { id: "design_47_3", gate: "47", x: 150 + offsetX, y: 389 + offsetY },
-        { id: "design_40_5", gate: "40", x: 150 + offsetX, y: 485 + offsetY },
-        { id: "design_7_3", gate: "7", x: 150 + offsetX, y: 581 + offsetY },
-        { id: "personality_60_4", gate: "60", x: 807 + offsetX, y: 197 + offsetY },
-        { id: "personality_56_4", gate: "56", x: 807 + offsetX, y: 245 + offsetY },
-        { id: "personality_47_3", gate: "47", x: 807 + offsetX, y: 389 + offsetY },
-        { id: "personality_40_5", gate: "40", x: 807 + offsetX, y: 485 + offsetY },
-        { id: "personality_7_2", gate: "7", x: 807 + offsetX, y: 581 + offsetY }
+        { id: "design_50_6", gate: "50", x: 150 - offsetX, y: 197 - offsetY },
+        { id: "design_3_6", gate: "3", x: 150 - offsetX, y: 245 - offsetY },
+        { id: "design_43_6", gate: "43", x: 150 - offsetX, y: 341 - offsetY },
+        { id: "design_47_3", gate: "47", x: 150 - offsetX, y: 389 - offsetY },
+        { id: "design_40_5", gate: "40", x: 150 - offsetX, y: 485 - offsetY },
+        { id: "design_7_3", gate: "7", x: 150 - offsetX, y: 581 - offsetY },
+        { id: "personality_60_4", gate: "60", x: 807 - offsetX, y: 197 - offsetY },
+        { id: "personality_56_4", gate: "56", x: 807 - offsetX, y: 245 - offsetY },
+        { id: "personality_47_3", gate: "47", x: 807 - offsetX, y: 389 - offsetY },
+        { id: "personality_40_5", gate: "40", x: 807 - offsetX, y: 485 - offsetY },
+        { id: "personality_7_2", gate: "7", x: 807 - offsetX, y: 581 - offsetY }
     ];
 
     const highlightedGates = [
-        { id: "gate_50_6", x: 365 + offsetX, y: 627 + offsetY },
-        { id: "gate_3_6", x: 480 + offsetX, y: 665 + offsetY },
-        { id: "gate_60_4", x: 478 + offsetX, y: 711 + offsetY },
-        { id: "gate_56_4", x: 496 + offsetX, y: 338 + offsetY },
-        { id: "gate_43_6", x: 478 + offsetX, y: 284 + offsetY },
-        { id: "gate_47_3", x: 461 + offsetX, y: 238 + offsetY },
-        { id: "gate_40_5", x: 569 + offsetX, y: 581 + offsetY },
-        { id: "gate_7_2", x: 461 + offsetX, y: 470 + offsetY }
+        { id: "gate_50_6", x: 365 - offsetX, y: 627 - offsetY },
+        { id: "gate_3_6", x: 480 - offsetX, y: 665 - offsetY },
+        { id: "gate_60_4", x: 478 - offsetX, y: 711 - offsetY },
+        { id: "gate_56_4", x: 496 - offsetX, y: 338 - offsetY },
+        { id: "gate_43_6", x: 478 - offsetX, y: 284 - offsetY },
+        { id: "gate_47_3", x: 461 - offsetX, y: 238 - offsetY },
+        { id: "gate_40_5", x: 569 - offsetX, y: 581 - offsetY },
+        { id: "gate_7_2", x: 461 - offsetX, y: 470 - offsetY }
     ];
     const contentMap = {
         "head": "<strong>Head Centre - Undefined:</strong> Pressure to think and generate ideas. You draw inspiration for your thoughts from the outside world and from the people around you. You love the creative atmosphere and enjoy immersing yourself in it by attending various cultural events. But do not forget that excessive conditioning can confuse your consciousness and give you a headache at the body level. ",

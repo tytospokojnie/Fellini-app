@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "g_center", x: 478 - offsetX, y: 490 - offsetY, radius: 45 },
         { id: "sacral", x: 478 - offsetX, y: 632 - offsetY, radius: 45 },
         { id: "ego", x: 556 - offsetX, y: 563 - offsetY, radius: 30 },
-
         { id: "gate_50_6", x: 150 - offsetX, y: 197 - offsetY, radius: 20 },
         { id: "gate_3_6", x: 150 - offsetX, y: 245 - offsetY, radius: 20 },
         { id: "gate_43_6", x: 150 - offsetX, y: 341 - offsetY, radius: 20 },
@@ -49,42 +48,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function openPopup(id) {
         const contentMap = {
-            "head": "<strong>Head Centre - Undefined:</strong> Pressure to think and generate ideas. You draw inspiration for your thoughts from the outside world and from the people around you. You love the creative atmosphere and enjoy immersing yourself in it by attending various cultural events. But do not forget that excessive conditioning can confuse your consciousness and give you a headache at the body level. ",
-                        "throat": "<strong>Throat Centre - Defined:</strong> Manifestation in words or actions. You know when to speak and when to be silent, and you are equally comfortable with both. You have your own, constant and unique way of expressing yourself. If it is for you to speak, you are able to express your position or attitude to an issue in a clear and convincing way. However, be careful not to turn your oratory into a tool for psychological pressure. ",
-                        "g_center": "<strong> G Centre - Undefined:</strong> Impersonal (transcendent) love and vector of movement through life.  You understand other people's goals and aspirations well, but you cannot say that about yourself. You do not have a clear idea of who you are, because you feel completely different around different people. You take over the style, behaviour, hobbies and even food preferences of the person you are currently close to. So it is very important for you to be in the right place and around the right people for you. You are able to experience life from all angles, changing your direction, and experiencing all the variety of manifestations of love.",
-                        "sacral": "<strong>Sacral Centre - Defined:</strong> A motor centre. The Generator's creative energy source. You have a powerful source of vital energy inside you. If you act from Response, your enthusiasm and diligence will become an example for others. To avoid depression, do not force yourself to do things that you are not interested in and do not need. Learn to listen to your body and put your personal interests first.",
-                        "ego": "<strong>Heart Centre (Ego) - Undefined:</strong> A motor centre. Self-esteem, willpower, material interests. You sense other people's willpower, level of self-esteem and ability to achieve material success. You know the real cost of things and the effort involved. But your own self-esteem is unstable, and it should not depend on someone else's opinion. Choose your social circle carefully - you reveal yourself where you are accepted as you are, not for any achievements. Your real value lies in your uniqueness! In order not to create unnecessary stress for yourself, you should not distribute promises to everyone and make unnecessary commitments.",
+            "head": `<strong>Head Centre - Undefined:</strong> Pressure to think and generate ideas. You draw inspiration for your thoughts from the outside world and from the people around you. You love the creative atmosphere and enjoy immersing yourself in it by attending various cultural events. But do not forget that excessive conditioning can confuse your consciousness and give you a headache at the body level. "`,
+            "throat": "<strong>Throat Centre - Defined:</strong> Manifestation in words or actions. You know when to speak and when to be silent, and you are equally comfortable with both. You have your own, constant and unique way of expressing yourself. If it is for you to speak, you are able to express your position or attitude to an issue in a clear and convincing way. However, be careful not to turn your oratory into a tool for psychological pressure. "`,
+            "g_center": "<strong> G Centre - Undefined:</strong> Impersonal (transcendent) love and vector of movement through life.  You understand other people's goals and aspirations well, but you cannot say that about yourself. You do not have a clear idea of who you are, because you feel completely different around different people. You take over the style, behaviour, hobbies and even food preferences of the person you are currently close to. So it is very important for you to be in the right place and around the right people for you. You are able to experience life from all angles, changing your direction, and experiencing all the variety of manifestations of love."`,
+            "sacral": "<strong>Sacral Centre - Defined:</strong> A motor centre. The Generator's creative energy source. You have a powerful source of vital energy inside you. If you act from Response, your enthusiasm and diligence will become an example for others. To avoid depression, do not force yourself to do things that you are not interested in and do not need. Learn to listen to your body and put your personal interests first.",
+            "ego": "<strong>Heart Centre (Ego) - Undefined:</strong> A motor centre. Self-esteem, willpower, material interests. You sense other people's willpower, level of self-esteem and ability to achieve material success. You know the real cost of things and the effort involved. But your own self-esteem is unstable, and it should not depend on someone else's opinion. Choose your social circle carefully - you reveal yourself where you are accepted as you are, not for any achievements. Your real value lies in your uniqueness! In order not to create unnecessary stress for yourself, you should not distribute promises to everyone and make unnecessary commitments."`,
             "gate_50_6": `Gate 50.6 (Design Sun): Moral Responsibility, Nuance, Demolishing Preconceptions, Ethical Artistry<br><br>
                             <strong>Quote:</strong><br>
                             All of Fellini's films, as the director noted in a letter about Amarcord to the Italian critic Gian Luigi Rondi, 'have the tendency to demolish preconceived ideas, rhetoric, diagrams, taboos, the abhorrent forms of a certain type of upbringing.' (p.120)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 50 represents values, ethics, and the responsibility of maintaining or transforming cultural norms. The sixth line has a revolutionary quality—someone who questions and dismantles limiting beliefs to make space for a new way of thinking.`,
-                        "gate_3_6": `Gate 3.6 (Design Earth): Experimentation, Trial and Error, New Forms, Creative Struggle<br><br>
+            "gate_3_6": `Gate 3.6 (Design Earth): Experimentation, Trial and Error, New Forms, Creative Struggle<br><br>
                             <strong>Quote:</strong><br>
                             “Movies now have gone past the phase of prose narrative and are coming nearer and nearer to poetry.” (p. 71)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 3 is about ordering chaos, finding new structures, and embracing mutation.`,
-                        "gate_43_6": `Gate 43.6 (Design Moon): Radical Vision, Mental Clarity, Inner Knowing, Defying Conventions <br><br>
+            "gate_43_6": `Gate 43.6 (Design Moon): Radical Vision, Mental Clarity, Inner Knowing, Defying Conventions <br><br>
                             <strong>Quote:</strong><br>
                             “Because Fellini is primarily an artist and not an ideologue, it is not surprising that the few basic beliefs he holds in this regard are rooted ultimately in his aesthetics.” (p. 119)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 43 is about unique insights and breaking away from conventional wisdom.`,
-                        "gate_47_3": `Gate 47.3 (Design Venus): Processing Confusion, Finding Meaning in the Abstract<br><br>
+            "gate_47_3": `Gate 47.3 (Design Venus): Processing Confusion, Finding Meaning in the Abstract<br><br>
                             <strong>Quote:</strong><br>
                             “<em>8½</em> was initially planned as a simple film about a film director unable to make a film.” (p. 180)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 47.3 is about sitting with confusion until insight emerges.`,
-                        "gate_40_5": `Gate 40.5 (Design Mars): Willpower, Aloneness & Restoration of the Tribe<br><br>
+            "gate_40_5": `Gate 40.5 (Design Mars): Willpower, Aloneness & Restoration of the Tribe<br><br>
                             <strong>Quote:</strong><br>
                             “Although Fellini was surrounded by a loyal team of collaborators, he often withdrew from them before starting a new project.” (p. 97)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 40.5 represents the tension between individual willpower and community.`,
-                        "gate_7_3": `Gate 7.3 (Design Jupiter): Pragmatic Leadership, Balancing Idealism & Realism<br><br>
+            "gate_7_3": `Gate 7.3 (Design Jupiter): Pragmatic Leadership, Balancing Idealism & Realism<br><br>
                             <strong>Quote:</strong><br>
                             “Fellini managed to maintain creative control over his films while skillfully navigating financial and political constraints. He was an expert at persuading producers to support his vision, often securing funding for unconventional projects that might have otherwise been rejected.” (p. 231)<br><br>
                             <strong>Explanation:</strong><br>
                              Gate 7 in Line 3 is about leadership that balances idealism with practical considerations. Fellini's ability to secure funding and navigate industry constraints while staying true to his artistic vision exemplifies this energy. He was a leader who understood both the dream and the reality, ensuring his ideas could manifest successfully in the world.`,
-                        "gate_60_4": `Gate 60.4 (Personality Sun): Acceptance, Limitation as a Catalyst for Innovation<br><br>
+            "gate_60_4": `Gate 60.4 (Personality Sun): Acceptance, Limitation as a Catalyst for Innovation<br><br>
                             <strong>Quote:</strong><br>
                             “Fellini discovered that censorship, budget constraints, and technical limitations often fueled his creativity rather than hindered it. He embraced these constraints, using them to develop innovative cinematic techniques, such as the dreamlike artificiality of <em>La Strada</em> and <em>8½</em>.“ (p. 142)<br><br>
                             <strong>Explanation:</strong><br>

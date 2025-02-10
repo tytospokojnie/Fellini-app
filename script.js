@@ -7,6 +7,39 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupContent = document.getElementById("popup-content");
     const closeBtn = document.getElementById("close-popup");
 
+    const clickableAreas = [
+        { id: "head", x: 476, y: 173, radius: 30 },
+        { id: "throat", x: 477, y: 370, radius: 45 },
+        { id: "g_center", x: 478, y: 490, radius: 45 },
+        { id: "sacral", x: 478, y: 632, radius: 45 },
+        { id: "ego", x: 556, y: 563, radius: 30 }
+    ];
+
+    const planetaryThemes = [
+        { id: "design_50_6", gate: "50", x: 150, y: 197 },
+        { id: "design_3_6", gate: "3", x: 150, y: 245 },
+        { id: "design_43_6", gate: "43", x: 150, y: 341 },
+        { id: "design_47_3", gate: "47", x: 150, y: 389 },
+        { id: "design_40_5", gate: "40", x: 150, y: 485 },
+        { id: "design_7_3", gate: "7", x: 150, y: 581 },
+        { id: "personality_60_4", gate: "60", x: 807, y: 197 },
+        { id: "personality_56_4", gate: "56", x: 807, y: 245 },
+        { id: "personality_47_3", gate: "47", x: 807, y: 389 },
+        { id: "personality_40_5", gate: "40", x: 807, y: 485 },
+        { id: "personality_7_2", gate: "7", x: 807, y: 581 }
+    ];
+
+    const highlightedGates = [
+        { id: "50", x: 365, y: 627 },
+        { id: "3", x: 480, y: 665 },
+        { id: "60", x: 478, y: 711 },
+        { id: "56", x: 496, y: 338 },
+        { id: "43", x: 478, y: 284 },
+        { id: "47", x: 461, y: 238 },
+        { id: "40", x: 569, y: 581 },
+        { id: "7", x: 461, y: 470 }
+    ];
+
     closeBtn.addEventListener("click", () => {
         popup.style.display = "none";
     });
@@ -14,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function createHotspot(area) {
         const hotspot = document.createElement("div");
         hotspot.classList.add("hotspot");
-        hotspot.style.left = `${area.x - area.radius}px`;
-        hotspot.style.top = `${area.y - area.radius}px`;
+        hotspot.style.left = `${area.x + offsetX - area.radius}px`;
+        hotspot.style.top = `${area.y + offsetY - area.radius}px`;
         hotspot.style.width = `${area.radius * 2}px`;
         hotspot.style.height = `${area.radius * 2}px`;
         hotspot.dataset.id = area.id;
@@ -28,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function createPlanetaryLabel(theme) {
         const label = document.createElement("div");
         label.classList.add("planetary-label");
-        label.style.left = `${theme.x}px`;
-        label.style.top = `${theme.y}px`;
+        label.style.left = `${theme.x + offsetX}px`;
+        label.style.top = `${theme.y + offsetY}px`;
         label.dataset.id = theme.id;
-        label.innerText = theme.gate; // Ensure visibility
+        label.innerText = theme.gate;
         
         label.addEventListener("mouseenter", () => highlightGate(theme.gate));
         label.addEventListener("mouseleave", () => removeHighlight(theme.gate));
@@ -41,16 +74,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function highlightGate(gate) {
-        let correspondingGate = document.querySelector(`[data-id="gate_${gate}"]`);
+        const correspondingGate = highlightedGates.find(g => g.id === gate);
         if (correspondingGate) {
-            correspondingGate.classList.add("highlighted");
+            const gateElement = document.createElement("div");
+            gateElement.classList.add("highlighted-gate");
+            gateElement.style.left = `${correspondingGate.x + offsetX}px`;
+            gateElement.style.top = `${correspondingGate.y + offsetY}px`;
+            gateElement.dataset.id = `gate_${gate}`;
+            imageContainer.appendChild(gateElement);
         }
     }
 
     function removeHighlight(gate) {
-        let correspondingGate = document.querySelector(`[data-id="gate_${gate}"]`);
-        if (correspondingGate) {
-            correspondingGate.classList.remove("highlighted");
+        const gateElement = document.querySelector(`[data-id="gate_${gate}"]`);
+        if (gateElement) {
+            gateElement.remove();
         }
     }
 
@@ -127,5 +165,4 @@ document.addEventListener("DOMContentLoaded", function () {
     clickableAreas.forEach(createHotspot);
     planetaryThemes.forEach(createPlanetaryLabel);
 });
-
 

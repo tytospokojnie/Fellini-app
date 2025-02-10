@@ -54,56 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "sacral": "<strong>Sacral Centre - Defined:</strong> A motor centre. The Generator's creative energy source. You have a powerful source of vital energy inside you. If you act from Response, your enthusiasm and diligence will become an example for others. To avoid depression, do not force yourself to do things that you are not interested in and do not need. Learn to listen to your body and put your personal interests first.",
             "ego": "<strong>Heart Centre (Ego) - Undefined:</strong> A motor centre. Self-esteem, willpower, material interests. You sense other people's willpower, level of self-esteem and ability to achieve material success. You know the real cost of things and the effort involved. But your own self-esteem is unstable, and it should not depend on someone else's opinion. Choose your social circle carefully - you reveal yourself where you are accepted as you are, not for any achievements. Your real value lies in your uniqueness! In order not to create unnecessary stress for yourself, you should not distribute promises to everyone and make unnecessary commitments.",
             "gate_50_6":  "Gate 50.6 (Design Sun): Moral Responsibility, Nuance, Demolishing Preconceptions, Ethical Artistry<br><br> <strong>Quote:</strong><br> All of Fellini's films, as the director noted in a letter about Amarcord to the Italian critic Gian Luigi Rondi, 'have the tendency to demolish preconceived ideas, rhetoric, diagrams, taboos, the abhorrent forms of a certain type of upbringing.' (p.120)<br><br><strong>Explanation:</strong><br Gate 50 represents values, ethics, and the responsibility of maintaining or transforming cultural norms. The sixth line has a revolutionary quality—someone who questions and dismantles limiting beliefs to make space for a new way of thinking.",
-            "gate_3_6":  "Gate 3.6 (Design Earth): Experimentation, Trial and Error, New Forms, Creative Struggle<br><br>
-                            <strong>Quote:</strong><br>
-                            “Movies now have gone past the phase of prose narrative and are coming nearer and nearer to poetry.” (p. 71)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 3 is about ordering chaos, finding new structures, and embracing mutation. ",
-            "gate_43_6":  "Gate 43.6 (Design Moon): Radical Vision, Mental Clarity, Inner Knowing, Defying Conventions <br><br>
-                            <strong>Quote:</strong><br>
-                            “Because Fellini is primarily an artist and not an ideologue, it is not surprising that the few basic beliefs he holds in this regard are rooted ultimately in his aesthetics.” (p. 119)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 43 is about unique insights and breaking away from conventional wisdom. ",
-            "gate_47_3":  "Gate 47.3 (Design Venus): Processing Confusion, Finding Meaning in the Abstract<br><br>
-                            <strong>Quote:</strong><br>
-                            “<em>8½</em> was initially planned as a simple film about a film director unable to make a film.” (p. 180)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 47.3 is about sitting with confusion until insight emerges. ",
-            "gate_40_5":  "Gate 40.5 (Design Mars): Willpower, Aloneness & Restoration of the Tribe<br><br>
-                            <strong>Quote:</strong><br>
-                            “Although Fellini was surrounded by a loyal team of collaborators, he often withdrew from them before starting a new project.” (p. 97)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 40.5 represents the tension between individual willpower and community. ",
-            "gate_7_3":  "Gate 7.3 (Design Jupiter): Pragmatic Leadership, Balancing Idealism & Realism<br><br>
-                            <strong>Quote:</strong><br>
-                            “Fellini managed to maintain creative control over his films while skillfully navigating financial and political constraints. He was an expert at persuading producers to support his vision, often securing funding for unconventional projects that might have otherwise been rejected.” (p. 231)<br><br>
-                            <strong>Explanation:</strong><br>
-                             Gate 7 in Line 3 is about leadership that balances idealism with practical considerations. Fellini's ability to secure funding and navigate industry constraints while staying true to his artistic vision exemplifies this energy. He was a leader who understood both the dream and the reality, ensuring his ideas could manifest successfully in the world. ",
-            "gate_60_4":  "Gate 60.4 (Personality Sun): Acceptance, Limitation as a Catalyst for Innovation<br><br>
-                            <strong>Quote:</strong><br>
-                            “Fellini discovered that censorship, budget constraints, and technical limitations often fueled his creativity rather than hindered it. He embraced these constraints, using them to develop innovative cinematic techniques, such as the dreamlike artificiality of <em>La Strada</em> and <em>8½</em>.“ (p. 142)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 60.4 is about accepting limitations as a necessary condition for creativity. Rather than resisting external constraints, Fellini used them as a springboard for artistic breakthroughs. His ability to work within—and even thrive under—limitations embodies this gate's energy. ",
-                            "gate_56_4":  "Gate 56.4 (Personality Earth): Narrative, Inspiration, Audience Connection, Imagination Over Facts<br><br>
-                            <strong>Quote:</strong><br>
-                           “It would be difficult to find a statement designed to infuriate contemporary film critics more than Fellini's belief that an artist can speak sincerely and directly to a spectator of a film and that the film, considered foremost as a work of art, represents primarily a moment of artistic expression that establishes a mysterious relationship between storyteller (Fellini) and viewer (the public). The visual images narrating the director’s story are ultimately derived from the director's dream life. Rather than ideological pronouncements, Fellini's images typically aim at the communication of emotions or sentiments rather than ideological statements.” (p. 5)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 56 is about the power of storytelling, particularly through personal experience and emotional connection rather than factual exposition. The fourth line emphasizes using past experiences to inspire and move others. This quote illustrates how Fellini saw film as a direct dialogue between artist and audience, aiming to evoke emotions rather than impose ideology—perfectly embodying the essence of the 56th gate. ",
-                         "gate_26_3":  "Gate 26.3 (Personality Venus): Persuasion, Getting Maximum Reward with Minimum Effort<br><br>
-                            <strong>Quote:</strong><br>
-                           “Fellini was a consummate showman, not only an artistic genius but also a master magician and even something of a con man. He was a believer in the power of illusion and prestidigitation, an artist who preferred artifice to reality, and a man who believed that dreams were the most honest expression possible for a human being.” (p. 4)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 26 is the energy of persuasion, salesmanship, and the ability to turn raw potential into something marketable. The third line often carries an element of calculated risk, trickery, or cleverness in navigating power structures. This quote captures Fellini's ability to enchant and persuade, both in his films and in how he presented himself—blurring the lines between illusion and reality, making the “con man” archetype a central part of his artistic identity. ",
-                        "gate_32_6":  "Gate 32.6 (Personality Mars): Fear of Failure, Endurance & Transformation<br><br>
-                            <strong>Quote:</strong><br>
-                           “Fellini had reached the summit of his career with <em>8½</em>, but his reputation suffered a serious setback with <em>Juliet of the Spirits</em>, a film that was generally seen as a pale imitation of his earlier work, and Fellini's Casanova, which, despite its technical brilliance, was rejected as cold and impersonal. Yet Fellini refused to allow these failures to define him. He reinvented himself and continued making films that challenged both himself and his audience.“ (p. 215)<br><br>
-                            <strong>Explanation:</strong><br>
-                           Gate 32.6 is about endurance in the face of failure—understanding that transformation comes from persistence. Despite critical setbacks, Fellini’s refusal to let past failures define him shows his alignment with this gate. His ability to re-emerge with bold new projects reflects the energy of resilience and long-term success. ",
-                        "gate_7_2": "Gate 7.2 (Personality Jupiter): The Advisor, Influence from Behind the Scenes<br><br>
-                            <strong>Quote:</strong><br>
-                           “Fellini has frequently compared his set to an ocean voyage like that of Columbus toward the New World: The crew constantly attempts to turn back, but the director-captain must somehow lead them all to a successful landing.“ (p. 3)<br><br>
-                            <strong>Explanation:</strong><br>
-                            Gate 7 in Line 2 represents unseen leadership—guiding others without always being the visible authority figure. Fellini's metaphor of the film set as a voyage, with himself as the captain who must lead a hesitant crew, illustrates this perfectly. He was not a dictator, but his leadership ensured that his artistic vision was realized, influencing his collaborators from behind the scenes.";
+
                     }
         popupContent.innerHTML = contentMap[id] || "No content available";
         popup.style.display = "block";

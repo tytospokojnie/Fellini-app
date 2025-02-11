@@ -129,7 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = "block";
         popup.style.position = "absolute";
         popup.style.top = "100px";
-        popup.style.width = "400px";
     }
 });
 

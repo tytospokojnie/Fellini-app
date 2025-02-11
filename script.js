@@ -128,8 +128,9 @@ document.addEventListener("DOMContentLoaded", function () {
         popupContent.innerHTML = contentMap[id] || "No content available";
         popup.style.display = "block";
         popup.style.position = "absolute";
-        popup.style.left = "50px";
+        popup.style.left = "200px";
         popup.style.top = "100px";
+        popup.style.width = "500px";
     }
 });
 

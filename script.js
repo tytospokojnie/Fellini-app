@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "ego", x: 556 - offsetX, y: 563 - offsetY, radius: 30 },
         { id: "gate_50_6", x: 150 - offsetX, y: 197 - offsetY, radius: 20 },
         { id: "gate_3_6", x: 150 - offsetX, y: 245 - offsetY, radius: 20 },
-        { id: "gate_43_6", x: 150 - offsetX, y: 437 - offsetY, radius: 20 },
-        { id: "gate_47_3", x: 150 - offsetX, y: 533 - offsetY, radius: 20 },
-        { id: "gate_40_5", x: 150 - offsetX, y: 581 - offsetY, radius: 20 },
-        { id: "gate_7_3", x: 150 - offsetX, y: 629 - offsetY, radius: 20 },
+        { id: "gate_43_6", x: 150 - offsetX, y: 389 - offsetY, radius: 20 },
+        { id: "gate_47_3", x: 150 - offsetX, y: 485 - offsetY, radius: 20 },
+        { id: "gate_40_5", x: 150 - offsetX, y: 533 - offsetY, radius: 20 },
+        { id: "gate_7_3", x: 150 - offsetX, y: 581 - offsetY, radius: 20 },
         { id: "gate_60_4", x: 807 - offsetX, y: 197 - offsetY, radius: 20 },
         { id: "gate_56_4", x: 807 - offsetX, y: 245 - offsetY, radius: 20 },
-        { id: "gate_26_3", x: 807 - offsetX, y: 533 - offsetY, radius: 20 },
-        { id: "gate_32_6", x: 807 - offsetX, y: 581 - offsetY, radius: 20 },
-        { id: "gate_7_2", x: 807 - offsetX, y: 629 - offsetY, radius: 20 }
+        { id: "gate_26_3", x: 807 - offsetX, y: 485 - offsetY, radius: 20 },
+        { id: "gate_32_6", x: 807 - offsetX, y: 533 - offsetY, radius: 20 },
+        { id: "gate_7_2", x: 807 - offsetX, y: 581 - offsetY, radius: 20 }
     ];
 
     const imageContainer = document.getElementById("chart-container");

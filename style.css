@@ -24,18 +24,15 @@ body {
 
 #popup {
     display: none;
-    position: absolute;
+    position: fixed;
     background: white;
     border: 2px solid black;
     padding: 10px;
     width: 500px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    
-    /* Centering */
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 

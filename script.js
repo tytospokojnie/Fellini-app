@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
                              <br><a href="https://www.humdes.com/en/kb/gates/7/" target="_blank">Read more here</a>`
                     }
         popupContent.innerHTML = contentMap[id] || "No content available";
+        popup.style.display = "block"; 
   
     }
 });

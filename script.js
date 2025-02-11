@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <strong>Explanation:</strong><br>
                             Gate 43 is about unique insights and breaking away from conventional wisdom.
                              <br><a href="https://www.humdes.com/en/kb/gates/43/">Read more here</a>`,
-                        "gate_47_3": `</strong>Gate 47.3 (Design Venus):</strong> Processing Confusion, Finding Meaning in the Abstract<br><br>
+                        "gate_47_3": `<strong>Gate 47.3 (Design Venus):</strong> Processing Confusion, Finding Meaning in the Abstract<br><br>
                             <strong>Quote:</strong><br>
                             “<em>8½</em> was initially planned as a simple film about a film director unable to make a film.” (p. 180)<br><br>
                             <strong>Explanation:</strong><br>
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
                            “Fellini has frequently compared his set to an ocean voyage like that of Columbus toward the New World: The crew constantly attempts to turn back, but the director-captain must somehow lead them all to a successful landing.“ (p. 3)<br><br>
                             <strong>Explanation:</strong><br>
                             Gate 7 in Line 2 represents unseen leadership—guiding others without always being the visible authority figure. Fellini's metaphor of the film set as a voyage, with himself as the captain who must lead a hesitant crew, illustrates this perfectly. He was not a dictator, but his leadership ensured that his artistic vision was realized, influencing his collaborators from behind the scenes.
-                             <br><a href="https://www.humdes.com/en/kb/gates/7/">Read more here</a>`,
+                             <br><a href="https://www.humdes.com/en/kb/gates/7/">Read more here</a>`
                     }
         popupContent.innerHTML = contentMap[id] || "No content available";
         popup.style.display = "block";

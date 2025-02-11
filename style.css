@@ -24,7 +24,7 @@ body {
 
 #popup {
     display: none;
-    position: fixed;
+    position: absolute;
     background: white;
     border: 2px solid black;
     padding: 10px;

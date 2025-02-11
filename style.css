@@ -52,3 +52,7 @@ body {
 #close-popup:hover {
     background-color: #c9302c;
 }
+
+#popup {
+    display: block !important;
+}
